@@ -1,2 +1,2 @@
 # 2D-MOC
-Zonally Averaged Model of the ocean Meridional Overturning Circulation
+A Zonally Averaged Model of the Meridional Overturning Circulation
