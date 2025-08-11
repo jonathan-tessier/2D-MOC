@@ -1,0 +1,10 @@
+# Packages (lines beginning "#" are comments)
+ &PACKAGES
+ useKPP         = .FALSE.,
+ useDiagnostics = .TRUE.,
+ usegmredi      = .TRUE.,
+ useRBCS        = .TRUE.,
+ usePTRACERS    = .FALSE.,
+ useFLT         = .FALSE.,
+ useLayers      = .FALSE.,
+ &

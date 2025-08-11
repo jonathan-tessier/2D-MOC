@@ -1,0 +1,90 @@
+
+# ====================
+# | Model parameters |
+# ====================
+#
+# Continuous equation parameters
+ &PARM01
+ tRef = 40*10.
+ sRef = 40*35.,
+ diffKrNrT = 8.27399420e-06, 8.53279834e-06, 8.82437136e-06, 9.15515736e-06,
+       9.52878642e-06, 9.94945093e-06, 1.04219834e-05, 1.09475684e-05,
+       1.15272911e-05, 1.21668783e-05, 1.28728104e-05, 1.36524278e-05,
+       1.45140532e-05, 1.54671337e-05, 1.65224055e-05, 1.76920850e-05,
+       1.89900919e-05, 2.04323079e-05, 2.20368790e-05, 2.38245692e-05,
+       2.58191733e-05, 2.80480011e-05, 3.05424453e-05, 3.33386494e-05,
+       3.64782928e-05, 4.00095176e-05, 4.39880219e-05, 4.84783529e-05,
+       5.35554393e-05, 5.93064083e-05, 6.58327455e-05, 7.32528655e-05,
+       8.17051771e-05, 9.13517433e-05, 1.02382660e-04, 1.15021304e-04,
+       1.29530628e-04, 1.46220735e-04, 1.65457997e-04, 1.87676055e-04,
+ viscAr  = 2.E-3,
+ viscAh  = 1.E5 ,
+ bottomDragLinear =  3.e-3,
+# bottomDragQuadratic = 0.001,
+ tempAdvScheme =  77,
+# saltAdvScheme = 77,
+ saltstepping=.FALSE.,
+ rhoConst=1035.,
+ rhoConstFresh=1000.,
+ tAlpha=2.E-4,
+ sBeta =0.,
+ gravity=9.81,
+ eosType='LINEAR',
+ ivdc_kappa=100., 
+ implicitDiffusion=.TRUE.,
+ implicitViscosity=.TRUE.,
+ StaggerTimeStep=.TRUE.,	
+ multiDimAdvection=.TRUE.,
+ implicitFreeSurface=.TRUE.,
+ allowFreezing=.FALSE.,
+ hFacInf=0.2,
+ hFacSup=2.0,
+ useRealFreshWaterFlux=.TRUE.,
+ useCDscheme=.TRUE.,  
+ exactConserv=.TRUE.,
+# select_rStar=2,
+# nonlinFreeSurf=4,   
+ hFacMin=.05,
+ hFacMindr=50.,
+ readBinaryPrec=32,
+ globalFiles=.TRUE.,
+ useSingleCpuIO=.TRUE.,
+ &
+# Elliptic solver parameters
+ &PARM02
+ cg2dMaxIters=500,
+ cg2dTargetResidual=1.E-13,
+ &
+# Time stepping parameters
+ &PARM03
+ nIter0 =     0 ,
+ nTimeSteps = 90000000 ,
+ deltaTmom  = 2700.    ,
+ tauCD      = 321428.  ,
+ deltaTtracer =   50400.0     ,
+ deltaTClock  =   50400.0     ,
+ abEps=0.1,
+ pChkptFreq =   5.040000E+11 ,
+ chkptFreq  =   5.040000E+11 ,
+ dumpFreq   =   5.040000E+12  ,
+ monitorFreq=   504000000  ,
+ &
+ &PARM04
+ usingSphericalPolarGrid=.TRUE.,
+ delR= 37,    40,    44,    48,    52,
+ 56,    60,    63,    66,    69,
+ 72,    75,    78,    81,    84,
+ 87,    90,    93,    96,    99,
+ 102,   105,   108,   111,   114,
+ 117,   120,   123,   126,   129,
+ 132,   135,   138,   141,   144,
+ 147,   150,   153,   156,   159,
+ ygOrigin=-70.,
+ dySpacing=2.,
+ dxSpacing=2.,
+ &
+ &PARM05
+ bathyFile=      'topog.bin',
+ zonalWindFile=  'wind_x.bin',
+# surfQfile =   'Qo',
+ &
