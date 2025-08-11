@@ -1,4 +1,4 @@
-# 2D-MOC: A Zonally Averaged Model of the Meridional Overturning Circulation
+# 2D-MOC: A Zonally Averaged Model of the global ocean Meridional Overturning Circulation
 
 We evolve the zonally averaged buoyancy ($\overline{b}$) in time according to (for latitude $\theta$, longitude $\lambda$, and local vertical $z$) 
 
