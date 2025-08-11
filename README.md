@@ -1,4 +1,4 @@
-# A Zonally Averaged Model of the Global Ocean Meridional Overturning Circulation
+# A Zonally Averaged Model of the Global Ocean Meridional Overturning Circulation (2D-MOC)
 by: Jonathan Tessier
 
 ## Evolution
