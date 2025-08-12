@@ -83,7 +83,7 @@ use_Psi0 = False        # override Psi and use a predetermined Psi0, to be defin
 channel  = True         # include southern channel, Psi_tau replaces Psi_TW in channel latitudes
 SOyind   = 12           # latitude grid index of channel boundary (12 orig.) ~ -46 degrees
 matchSO  = True         # lin. correction to basin Psi_TW to match Psi_Res at channel interface, otherwise, goes to 0.
-free_TW  = True        # don't apply linear correction to basin, let Psi_TW integrate to whatever. overides matchSO 
+free_TW  = False        # don't apply linear correction to basin, let Psi_TW integrate to whatever. overides matchSO 
 
 # physics: GM slope clipping (if all false, full slope returns)
 kappaGM  = 1e3          # Gent-McWilliams eddy diff. (m^2/s) (typical 1e3)
