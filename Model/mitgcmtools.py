@@ -14,7 +14,7 @@ from MITgcmutils.utils import writebin, readbin
 np.set_printoptions(threshold=sys.maxsize)
 
 # Change this depending on where you store your outputs
-pathtocwd='/Users/jonathantessier/Workspace/sandbox/MITgcm-out/'
+pathtocwd='/path/to/MITgcm-out/'
 
 # some constants for your runs
 days2secs = 24*60*60
