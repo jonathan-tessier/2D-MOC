@@ -1,7 +1,8 @@
 # A Zonally Averaged Model of the Global Ocean Meridional Overturning Circulation (2D-MOC)
 by: Jonathan Tessier
 
-Model used in article: [Tessier, J., Nadeau, L.-P., & Jansen, M. F. (2026). A zonally-averaged model of the meridional overturning circulation. Journal of Physical Oceanography. doi:10.1175/JPO-D-25-0197.1](https://doi.org/10.1175/JPO-D-25-0197.1)
+Model used in article: [Tessier, Nadeau & Jansen (2026). A zonally-averaged model of the meridional overturning circulation. JPO
+56(5), 957–972.](https://doi.org/10.1175/JPO-D-25-0197.1)
 
 ## Evolution
 
