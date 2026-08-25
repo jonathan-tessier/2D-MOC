@@ -165,10 +165,10 @@ def solve_model(grid,phys,times,soln,plotting,output):
         print("Sou: Psi[ 0, :] min/max = {:.2e} / {:.2e} (Sv)".format(np.min((soln.Psi*1e-6)[0,:]),np.max((soln.Psi*1e-6)[0,:])))
         plt.tight_layout(); plt.show(); sys.exit()    
     
-    # main loop AB3 using nm3 nm2 nm1 variables (i.e at step n-3, n-2 and n-1 to find n)
+    # main loop 
     for cnt in range(1,len(times.t)):
     
-        # Other Options: Euler
+        # Euler for stability
         flux = bflux(soln,phys,grid,times.t[cnt]) 
         soln.b = soln.b + times.dt*flux 
 
